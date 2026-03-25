@@ -54,3 +54,8 @@ body{
 .bg-light1{
     background-color: #6ab6bd;
 }
+
+.form-control:focus{
+    border-color: #173033;
+    box-shadow: 0 0 0 0.2rem rgba(45, 99, 116, 0.25) !important;
+}
