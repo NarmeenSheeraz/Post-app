@@ -121,19 +121,45 @@ function editpost(e) {
 
 // login function 
 
-function login(){
+function signup(){
     var userName = document.getElementById("name")
-    var fatherName = document.getElementById("fname")
     var email = document.getElementById("email")
-      
-    if(userName.value.trim() && fatherName.value.trim() && email.value.trim()){
-        var loginA = document.getElementById("login")
-        loginA.setAttribute('href', 'dashboard.html')
+    var password = document.getElementById("password")
+    
+    if(userName.value.trim() && email.value.trim() && password.value.trim()){
+        var loginA = document.getElementById("signup")
+        loginA.setAttribute('href', 'login.html')
     }else{
         Swal.fire({
   icon: "error",
   title: "Oops...",
   text: "Something went wrong. Please fill out the form.",
+  
+});
+    }
+}
+function login(){
+    var userName = document.getElementById("name")
+    var email = document.getElementById("email")
+    var password = document.getElementById("password")
+    
+    if(email.value.trim() && password.value.trim()){
+        // var loginA = document.getElementById("login")
+        // loginA.setAttribute('href', 'dashboard.html')
+        Swal.fire({
+            title: 'Login!',
+            text: 'Successfully Login.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then(() => {
+            // Redirect after alert is closed
+            window.location.href = 'dashboard.html';
+        });
+    }else{
+        Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong. Please fill out correct email & password .",
   
 });
     }

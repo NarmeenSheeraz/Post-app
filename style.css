@@ -1,18 +1,23 @@
+html, body{
+    height: 100% !important;
+
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #BADFE7;
     background-image: url(images/bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    
 }
 
 
 
 .nav-bar{
-    background-color: #388087;
+    background-color: #1f1031;
 }
 .text-bdark{
     color: #173033 !important;
@@ -48,18 +53,50 @@ body{
     background-color: #040104a8;
     padding: 20px;
     border-radius: 20px;
+    height: 450px;
 }
 
 /* backgroun-color */
 
-.bg-dark1{
+/* .bg-dark1{
    background-color: #388087;
 }
 .bg-light1{
     background-color: #6ab6bd;
-}
+} */
 
 .form-control:focus{
-    border-color: #173033;
-    box-shadow: 0 0 0 0.2rem rgba(45, 99, 116, 0.25) !important;
+    border-color: #1f1031;
+    box-shadow: 0 0 0 0.2rem rgba(72, 45, 116, 0.25) !important;
+}
+input{
+    background-color: rgba(44, 37, 54, 100%) !important;
+    border-radius: 20px !important;
+    border: #1f1031 !important;
+    color: white !important;
+}
+.alreadylog a{
+    text-decoration: none !important;
+    color: #556466ef;
+}
+#name{
+    background-image: url(images/User.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+#email{
+    background-image: url(images/Secured\ Letter.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+#password{
+    background-image: url(images/Privacy.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+.bgpurple{
+    background-color: #592769;
 }
