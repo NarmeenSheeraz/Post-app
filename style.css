@@ -3,6 +3,10 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #BADFE7;
+    background-image: url(images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -15,8 +19,8 @@ body{
 }
 .btn-success{
     
-    background-color: #173033;
-    border: 2px #173033 solid;
+    background: linear-gradient(90deg, #592769, #9770cb);
+    border: none !important;
 }
 
 .btn-success:hover{
@@ -41,7 +45,7 @@ body{
 }
 
 .title-box{
-    background-color: #388087be;
+    background-color: #040104a8;
     padding: 20px;
     border-radius: 20px;
 }
